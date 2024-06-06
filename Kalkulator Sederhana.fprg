@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="naufa"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-03 11:18:10 AM"/>
+        <attribute name="created" value="bmF1ZmE7REVTS1RPUC1ONVM2SjhLOzIwMjItMTItMDI7MDk6NDM6NTQgUE07Mjg1OQ=="/>
+        <attribute name="edited" value="bmF1ZmE7REVTS1RPUC1ONVM2SjhLOzIwMjItMTItMDI7MTE6MzU6MDcgUE07MTsyOTU5"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtMzlOVlUwQzM7MjAyMi0xMi0wMzsxMToxODoxMCBBTTsxOzI3NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pil, i, j" type="Integer" array="False" size=""/>
+            <declare name="pilih" type="String" array="False" size=""/>
+            <declare name="ya" type="Boolean" array="False" size=""/>
+            <assign variable="ya" expression="true"/>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <declare name="ket" type="String" array="True" size="5"/>
+            <assign variable="ket[1]" expression="&quot;Kelompok 1&quot;"/>
+            <assign variable="ket[2]" expression="&quot;Nama Anggota : &quot;"/>
+            <assign variable="ket[3]" expression="&quot;1. Ning Imas Ati Zuhrotal Afifah (5312422007)&quot;"/>
+            <assign variable="ket[4]" expression="&quot;2. Faiq Fadilah (5312422022)&quot;"/>
+            <assign variable="ket[5]" expression="&quot;3. Al Bintang Adiyatma (5312422045)&quot;"/>
+            <declare name="menu" type="String" array="True" size="6"/>
+            <assign variable="menu[0]" expression="&quot;1. Penjumlahan&quot;"/>
+            <assign variable="menu[1]" expression="&quot;2. Pengurangan&quot;"/>
+            <assign variable="menu[2]" expression="&quot;3. Perkalian&quot;"/>
+            <assign variable="menu[3]" expression="&quot;4. Pembagian&quot;"/>
+            <assign variable="menu[4]" expression="&quot;5. Perpangkatan&quot;"/>
+            <assign variable="menu[5]" expression="&quot;6. Akar&quot;"/>
+            <for variable="i" start="0" end="0" direction="inc" step="1">
+                <output expression="kel[i]" newline="True"/>
+            </for>
+            <output expression="&quot;&lt;&lt;&lt;&lt;==========================================&gt;&gt;&gt;&gt;&quot;" newline="True"/>
+            <output expression="&quot;Kalkulator Sederhana&quot;" newline="True"/>
+            <do expression="ya == true">
+                <output expression="&quot;Pilih Operasi Penghitungan : &quot;" newline="True"/>
+                <for variable="j" start="0" end="5" direction="inc" step="1">
+                    <output expression="menu[j]" newline="True"/>
+                </for>
+                <output expression="&quot;Masukkan Pilihan : &quot;" newline="False"/>
+                <input variable="pil"/>
+                <if expression="pil &gt;=1 &amp;&amp; pil &lt;=4">
+                    <then>
+                        <output expression="&quot;Masukkan Angka Pertama : &quot;" newline="False"/>
+                        <input variable="x"/>
+                        <output expression="&quot;Masukkan Angka Kedua : &quot;" newline="False"/>
+                        <input variable="y"/>
+                        <if expression="pil = 1">
+                            <then>
+                                <output expression="x&amp; &quot; + &quot; &amp;y&amp; &quot; = &quot;&amp; pjl(x,y)" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="pil = 2">
+                                    <then>
+                                        <output expression="x&amp; &quot; - &quot; &amp;y&amp; &quot; = &quot;&amp; pgr(x,y)" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="pil = 3">
+                                            <then>
+                                                <output expression="x&amp; &quot; X &quot; &amp;y&amp; &quot; = &quot;&amp; pkl(x,y)" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="pil = 4">
+                                                    <then>
+                                                        <output expression="x&amp; &quot; : &quot; &amp;y&amp; &quot; = &quot;&amp; pbg(x,y)" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="pil = 5">
+                            <then>
+                                <output expression="&quot;Masukkan Angka : &quot;" newline="False"/>
+                                <input variable="x"/>
+                                <output expression="&quot; Masukkan Pangkat : &quot;" newline="False"/>
+                                <input variable="y"/>
+                                <output expression="x&amp; &quot; Pangkat &quot; &amp;y&amp; &quot; = &quot;&amp; pkt(x,y)" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="pil = 6">
+                                    <then>
+                                        <output expression="&quot;Masukkan Akar : &quot;" newline="False"/>
+                                        <input variable="x"/>
+                                        <output expression="&quot;Akar dari : &quot; &amp;x&amp; &quot; : &quot;&amp; akr(x)" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Pilihan Penghitungan yang Dipilih Tidak Tersedia&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;&lt;&lt;&lt;&lt;===========================================&gt;&gt;&gt;&gt;&quot;" newline="True"/>
+                <output expression="&quot;Apa Ingin Menggunakan Kalkulator Lagi? ya/tidak :&quot;" newline="False"/>
+                <input variable="pilih"/>
+                <if expression="pilih == &quot;ya&quot; or pilih == &quot;Ya&quot;">
+                    <then>
+                        <assign variable="ya" expression="true"/>
+                    </then>
+                    <else>
+                        <assign variable="ya" expression="false"/>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;END&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="akr" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="sqrt(a)"/>
+        </body>
+    </function>
+    <function name="pbg" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a/b"/>
+        </body>
+    </function>
+    <function name="pgr" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a-b"/>
+        </body>
+    </function>
+    <function name="pjl" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a+b"/>
+        </body>
+    </function>
+    <function name="pkl" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a*b"/>
+        </body>
+    </function>
+    <function name="pkt" type="Real" variable="c">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c" type="Real" array="False" size=""/>
+            <assign variable="c" expression="a^b"/>
+        </body>
+    </function>
+</flowgorithm>
