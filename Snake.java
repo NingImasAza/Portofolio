@@ -1,9 +1,3 @@
-
-/*
- * Title : Snake Game
- * Author : Manish Kumar
- * Blog : www.justdocodings.blogspot.com
- */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
